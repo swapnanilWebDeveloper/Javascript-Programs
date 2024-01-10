@@ -8,13 +8,16 @@
 </head>
 <body>
   <h1 id="stu_name">Name is : </h1>
+  <input type="text" id="name_stu" />
   <button onclick="update_message()">Update Text</button>
 
   <script>
     let StudentName = "Mayuk Mukherjee";
     let elelment = document.getElementById("stu_name");
+    let inputVal = document.getElementById("name_stu");
+
     const update_message = () => {
-      elelment.innerHTML = elelment.innerHTML + StudentName;
+      elelment.innerHTML = elelment.innerHTML + inputVal.value;
     }
   </script>
 </body>

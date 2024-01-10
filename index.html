@@ -9,14 +9,14 @@
 <body>
   <h1 id="stu_name">Name is : </h1>
   <input type="text" id="name_stu" />
-  <button onclick="update_message()">Update Text</button>
+  <button onclick="get_Name()">Update Text</button>
 
   <script>
     let StudentName = "Mayuk Mukherjee";
     let elelment = document.getElementById("stu_name");
     let inputVal = document.getElementById("name_stu");
 
-    const update_message = () => {
+    const get_Name = () => {
       elelment.innerHTML = elelment.innerHTML + inputVal.value;
     }
   </script>

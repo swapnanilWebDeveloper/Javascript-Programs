@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [
+            { fname: "mayuk", lname: "mukherjee", phy: 99, chem : 88, math : 97 },
+            { fname: "suryendu", lname: "sarkar", phy: 91, chem : 76, math : 83},
+            { fname: "sanlap", lname: "gadai", phy: 79, chem : 84, math : 90}
+        ];
+
+        var b = arr.map(full_name);
+        var c = arr.map(total_marks);
+
+        for(var i = 0; i < b.length; i++){
+             document.write("Total marks of "+b[i]+" is : "+c[i]+"<br>");
+        }
+
+        function full_name(data){
+            var name;
+            name = data.fname+" "+data.lname;
+            return name;
+        }
+
+        function total_marks(info){
+            var sum;
+            sum = info.phy + info.chem + info.math;
+            return sum;
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

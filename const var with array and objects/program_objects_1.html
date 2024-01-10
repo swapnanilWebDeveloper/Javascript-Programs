@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const a = {
+            f_name : "mayuk",
+            l_name : "mukherjee",
+            age : 25,
+            email : 'mayuk@gmail.com',
+            bengali : 71,
+            english : 82,
+            economics : 65,
+
+            arts_arr : [69, 82, 91, 66],
+
+            science : {
+                'phy' : '99',
+                'chem': '88',
+                'math': '97'
+            },
+
+            address : {
+                'city' : 'barendranagar',
+                'district' : 'nadia',
+                'state' : 'westbengal'
+            },
+
+            other_total : function(){
+                var sum;
+                sum = this.bengali + this.english + this.economics;
+                return sum;
+            },
+
+            science_total : function(){
+                var total;
+                total = parseInt(this.science.phy) +  parseInt(this.science.chem) +  parseInt(this.science.math) ;
+                return total;
+            },
+
+            arts_total : function(){
+                var sumation = 0;
+                for(var i = 0; i< this.arts_arr.length; i++){
+                    sumation = sumation + this.arts_arr[i];
+                }
+                return sumation;
+            }
+        }
+
+        document.write("before changing the data(for others :)<br>");
+        document.write("bengali :"+a.bengali+" , english : "+a.english+" , economics : "+a.economics+"<br>");
+        document.write("Total marks for other subjects is = "+a.other_total()+"<br>");
+
+        a.bengali = 88;
+        a.english = 92;
+        a.economics = 63;
+        document.write("after changing the data(for others :)<br>");
+        document.write("bengali :"+a.bengali+" , english : "+a.english+" , economics : "+a.economics+"<br>");
+        document.write("Total marks for other subjects is = "+a.other_total()+"<br>");
+
+        document.write("before changing the data(for arts :)<br>");
+        for(var i=0; i<a.arts_arr.length; i++){
+            document.write("marks of subject "+i+" : "+a.arts_arr[i]+"<br> ");
+        }
+        document.write("Total marks for arts subjects is = "+a.arts_total()+"<br>");
+
+        document.write("after reducing 10 marks from each subject(for arts :)<br>");
+        for(var i=0; i<a.arts_arr.length; i++){
+           a.arts_arr[i] = a.arts_arr[i] - 10;
+        }
+        for(var i=0; i<a.arts_arr.length; i++){
+            document.write("marks of subject "+i+" : "+a.arts_arr[i]+"<br> ");
+        }
+        document.write("Total marks for arts subjects is = "+a.arts_total()+"<br>");
+
+        // science marks
+
+        document.write("before changing the data(for oscience :)<br>");
+        document.write("physics :"+a.science.phy+" , chemistry : "+a.science.chem+" , mathematics : "+a.science.math+"<br>");
+        document.write("Total marks for science subjects is = "+a.science_total()+"<br>");
+
+        a.science.phy = 88;
+        a.science.chem = 92;
+        a.science.math = 63;
+        document.write("after changing the data(for oscience :)<br>");
+        document.write("physics :"+a.science.phy+" , chemistry : "+a.science.chem+" , mathematics : "+a.science.math+"<br>");
+        document.write("Total marks for science subjects is = "+a.science_total()+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

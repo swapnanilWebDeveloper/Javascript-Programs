@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var obj = {
+            first_name: "mayuk",
+            last_name : "mukherjee",
+            age : 25,
+            email : 'mayuk@gmail.com',
+            fav_food : ['ras gulla', 'pav vaji','burger'],
+            marks : [99,91,97,65],
+            science : {
+                'physics' : '99',
+                'chemistry' : '88',
+                'mathematics' : '91'
+            }
+        };
+
+        for(var key in obj){
+            if(key == 'marks'){
+                var sum = 0;
+                for(var i = 0; i<obj.marks.length; i++){
+                    sum = sum + obj.marks[i];
+                }
+                document.write("Total marks is = "+sum+"<br>");
+            }
+            if(key == 'science'){
+                var sumation = 0;
+                for(var sub in obj.science){
+                    document.write(sub+" : "+obj.science[sub]+"<br>");
+                  sumation = sumation + parseInt(obj.science[sub]);
+                }
+                document.write("Total marks for science = "+sumation+"<br>");
+            }
+            else{
+                document.write(key+" : "+obj[key]+" <br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

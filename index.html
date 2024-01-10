@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Variables in HTML</title>
+  <link rel="stylesheet" ref="style.css"/>
+</head>
+<body>
+  <h1 id="stu_name">Name is : </h1>
+  <button onclick="update_message()">Update Text</button>
+
+  <script>
+    let StudentName = "Mayuk Mukherjee";
+    let elelment = document.getElementById("stu_name");
+    const update_message = () => {
+      elelment.innerHTML = elelment.innerHTML + StudentName;
+    }
+  </script>
+</body>
+</html>

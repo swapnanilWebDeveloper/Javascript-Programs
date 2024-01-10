@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<p ></p>
+<button type="button" onclick="myFunction()">click here to getb cars</button>
+
+<script>
+    function myFunction(){
+        var cars = ["Saab", "Volvo", "BMW","Royal Enfield", "Rolls Royace" , "Ninja"];
+        var car_array = document.getElementsByTagName('p');
+        for(var i=0; i<car_array.length; i++)
+        {
+            console.log(car_array[i].innerHTML = cars[i]); 
+        }
+    }
+
+</script>
+
+</body>
+</html>

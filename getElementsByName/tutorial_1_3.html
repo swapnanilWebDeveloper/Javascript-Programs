@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <input type="text" placeholder="enter first name" name="myName"><br><br>
+       <input type="text" placeholder="enter last name" name="myName"><br><br>
+       <input type="text" placeholder="enter father's name" name="myName"><br><br>
+       <input type="text" placeholder="enter mother's name" name="myName"><br><br>
+
+       <input type="text" placeholder="enter city" name="myAddress"><br><br>
+       <input type="text" placeholder="enter district" name="myAddress"><br><br>
+       <input type="text" placeholder="enter state" name="myAddress"><br><br>
+       <input type="text" placeholder="enter country" name="myAddress"><br><br>
+
+
+    <!--   
+        <input type="text" placeholder="enter age" name="myAge"><br><br>
+       <input type="text" placeholder="enter salary" name="mySalary"><br><br>
+    --> 
+       <button type="button" onclick="submit_data()">click to submit</button>
+    </form>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h4></h4>
+    <h4></h4>
+    <h4></h4>
+    <h4></h4>
+</body>
+<script>
+       function submit_data(){
+        var data_name = document.getElementsByName('myName');
+        var data_address = document.getElementsByName('myAddress');
+        var tag_data = document.getElementsByTagName('p');
+        var another_tag = document.getElementsByTagName('h4');
+        var arr_mod = ["first Name" ,"last Name", "father's name", "mother's name", "city", "district", "state", "country" , "age" , "salary"];
+
+       for(var i=0; i<data_name.length; i++){
+            tag_data[i].innerHTML = arr_mod[i]+" is : "+data_name[i].value;
+            console.log(tag_data[i].innerHTML+"<br>");
+        }
+          
+        for(var i=0; i<data_address.length; i++){
+           another_tag[i].innerHTML = arr_mod[i + data_name.length]+" is : "+data_address[i].value;
+            console.log(another_tag[i].innerHTML+"<br>");
+        }
+
+       }
+</script>
+</html>

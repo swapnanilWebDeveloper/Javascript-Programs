@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <input type="text" placeholder="enter first name" name="f_name"><br><br>
+       <input type="text" placeholder="enter last name" name="l_name"><br><br>
+       <input type="text" placeholder="enter address" name="myAddress"><br><br>
+       <input type="text" placeholder="enter age" name="myAge"><br><br>
+       <input type="text" placeholder="enter salary" name="mySalary"><br><br>
+       <input type="text" placeholder="enter qualification" name="myQlf"><br><br>
+       <button type="button" onclick="submit_data()">click to submit</button>
+    </form>
+</body>
+<script>
+       function submit_data(){
+        var data_fname = document.getElementsByName('f_name');
+        var data_lname = document.getElementsByName('l_name');
+        var data_address = document.getElementsByName('myAddress');
+        var data_age = document.getElementsByName('myAge');
+        var data_salary = document.getElementsByName('mySalary');
+        var data_qlf = document.getElementsByName('myQlf');
+        console.log(data_fname[0].value);
+        console.log(data_lname[0].value);
+        console.log(data_address[0].value);
+        console.log(data_age[0].value);
+        console.log(data_salary[0].value);
+        console.log(data_qlf[0].value);
+       }
+</script>
+</html>

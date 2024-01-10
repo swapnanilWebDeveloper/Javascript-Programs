@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript first</title>
+    </head>
+    <body>
+        <h1>fisrt heading</h1>
+        <h1>Name</h1>
+        <h1>Roll</h1>
+        <h1>Age</h1>
+        <br><br><br>
+        <p>first paragraph</p>
+        <p>swapnanil</p>
+        <p>16</p>
+        <p>25</p>
+        <button type="button" onclick="myFunction()">click here</button>
+    </body>
+    <script>
+        function myFunction(){
+            var arr_info = document.getElementsByTagName('h1');
+            var update_info = document.getElementsByTagName('p');
+            for(var i=0; i<arr_info.length; i++){
+               // console.log(arr_info[i].innerHTML = "rahul is a good boy");
+               console.log(arr_info[i].innerHTML = arr_info[i].innerHTML+ "  is ::" +update_info[i].innerHTML);
+            }
+        }
+    </script>
+</html>

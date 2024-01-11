@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const individual = [
+    { fname: "mayuk",  lname : "mukherjee", science:{'physics' : '99', 'chemistry' : '88', 'mathematics' : '97'} },
+    { fname: "suryendu",  lname : "sarkar", science: {'physics' : '90', 'chemistry' : '81', 'mathematics' : '77'} },
+    { fname: "Aninda",  lname : "chatterjee", science: {'physics' : '89', 'chemistry' : '74', 'mathematics' : '69'} },
+    { fname: "sanlap",  lname : "gadai", science: { 'physics' : '84', 'chemistry' : '60', 'mathematics' : '82' } },
+];
+
+const modify_data = (person) =>{
+       last_per = {};
+       last_per.name = person.fname +" "+person.lname;
+       last_per.total = parseInt(person.science.physics) +  parseInt(person.science.chemistry )+  parseInt(person.science.mathematics);
+       return last_per;
+}
+
+let Newperson = individual.map(modify_data);
+
+for(var i = 0; i< Newperson.length; i++){
+      document.write(Newperson[i].name+" 's total marks is : "+Newperson[i].total+"<br>");
+}
+</script>
+</head>
+<body>
+    
+</body>
+</html>

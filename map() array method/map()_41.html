@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const student = [
+    { fname: "mayuk",  lname : "mukherjee", physics : 99, chemistry : 88, mathematics : 97 },
+    { fname: "suryendu",  lname : "sarkar", physics : 90, chemistry : 81, mathematics : 77 },
+    { fname: "Aninda",  lname : "chatterjee", physics : 89, chemistry : 74, mathematics : 69 },
+    { fname: "sanlap",  lname : "gadai", physics : 84, chemistry : 60, mathematics : 82 },
+];
+
+const calc_science = (data) => {
+        new_data = {};
+        new_data.name = data.fname+" "+data.lname;
+        new_data.marks = data.physics + data.chemistry + data.mathematics;
+        return new_data;
+    };
+
+let total_sc = student.map(calc_science);
+
+for(var i = 0; i < total_sc.length; i++){
+    document.write("The total marks for "+total_sc[i].name+" is = "+total_sc[i].marks+"<br>");
+}
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = [40,60,20,15,30,55,50];
+
+        document.write("your array is : <br>");
+        a.forEach(function(value,index){
+            document.write(index+" : "+value+"<br>");
+        }
+        );
+        var sum = 0;
+        a.forEach(function(value,index){
+        sum = sum + value; 
+     //   sum = sum + a[index] ;  
+        }
+        );
+        document.write("sumation is : "+sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

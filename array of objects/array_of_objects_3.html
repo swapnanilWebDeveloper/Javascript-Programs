@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var student = [
+            {
+                name : "mayuk",
+                age : 25,
+                science_arr : [99, 88, 97],
+                address : {
+                    'city' : 'new jersey',
+                    'state' : 'oklohama',
+                    'country' : 'usa'
+                },
+                calc_total : function(){
+                    var sum = 0;
+                    for(var i=0; i<this.science_arr.length; i++){
+                         sum = sum + this.science_arr[i];
+                    }
+                    return sum;
+                }
+            },
+            {
+                name : "suryendu",
+                age : 22,
+                science_arr : [84, 78, 71],
+                address : {
+                    'city' : 'seoul',
+                    'state' : 'gangnum',
+                    'country' : 'south-korea'
+                },
+                calc_total : function(){
+                    var sum = 0;
+                    for(var i=0; i<this.science_arr.length; i++){
+                         sum = sum + this.science_arr[i];
+                    }
+                    return sum;
+                }
+            },
+            {
+                name : "aninda",
+                age : 20,
+                science_arr : [64, 88, 51],
+                address : {
+                    'city' : 'jadavpur',
+                    'state' : 'westbengal',
+                    'country' : 'India'
+                },
+                calc_total : function(){
+                    var sum = 0;
+                    for(var i=0; i<this.science_arr.length; i++){
+                         sum = sum + this.science_arr[i];
+                    }
+                    return sum;
+                }
+            },
+        ]
+
+        for(var i=0; i < student.length; i++){
+            document.write("name is : "+student[i].name+" , age is = "+student[i].age+" , total marks is = "+student[i].calc_total()+"<br>");
+        }
+        for(var i=0; i<student.length; i++){
+            document.write(student[i].name+" 's marks are <br>");
+            document.write("physics : "+student[i].science_arr[0]+" , chemistry : "+student[i].science_arr[1]+" , mathematics : "+student[i].science_arr[2]+"<br>");
+        }
+        for(var i=0; i<student.length; i++){
+            document.write(student[i].name+" 's address is <br>");
+            document.write("city : "+student[i].address.city+" , state : "+student[i].address.state+" , country : "+student[i].address.country+"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

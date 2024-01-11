@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var person = new Object();
+
+        person = {
+            father_name : "kalyan mukherjee",
+            mother_name : "ritashree mukherjee",
+            bengali : 91,
+            english : 82,
+            calc_lang : function(){
+                var total;
+                total = this.bengali + this.english;
+                return total;
+            }
+        }
+
+        person.first_name = "mayuk";
+        person.last_name = "mukherjee";
+        person.age = 25;
+        person.phy = 99;
+        person.chem = 88;
+        person.math = 97;
+        person.calc_total = function(){
+            var sum = this.phy + this.chem + this.math;
+            return sum;
+        }
+
+        document.write("name = "+person.first_name+" : "+person.last_name+"<br>");
+        document.write(" age is = "+person.age+"<br>");
+        document.write("total marks is = "+person.calc_total()+"<br>");
+        document.write("total marks for language department is = "+person.calc_lang()+"<br>");
+        document.write("father's name is : "+person.father_name+" mother's name is = "+person.mother_name+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

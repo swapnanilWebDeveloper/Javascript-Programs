@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = {
+            fname : 'Yahoo',
+            lname : 'Baba',
+            age : 25,
+            email : 'Yahoo@gmail.com',
+            favmovies : ['dhoom','krish','k3g','mein hoon na'],
+            arts : [84, 77, 81, 82],
+            salary : function(){
+                return 25000;
+            },
+            fullname : function(fname, lname){
+                document.write("fullname is = "+fname+" : "+lname+"<br>");
+                return (this.fname+" "+this.lname);
+            },
+            living : {
+                'city' : 'chandigarh',
+                'country' : 'India'
+            },
+            science : {
+                'physics' : '92',
+                'chemistry' : '86',
+                'mathematics' : '81'
+            },
+            total : function(){
+                var sum;
+                sum = parseInt(this.science.physics) +  parseInt(this.science.chemistry) +  parseInt(this.science.mathematics);
+                document.write("<br>Total marks is = "+sum+"<br>");
+            },
+            final_arts : function(){
+                var sumation = 0;
+                for(var i = 0; i<this.arts.length; i++){
+                      sumation = sumation + this.arts[i];
+                }
+                return sumation;
+            }
+        }
+
+        console.log(a);
+
+        document.write(a.fname+"<br>");
+        document.write(a.lname+"<br>");
+        document.write(a.age+"<br>");
+        document.write(a.email+"<br>");
+        document.write(a.favmovies+"<br>");
+
+        document.write(a.favmovies[0]+"<br>");
+        document.write(a.favmovies[1]+"<br>");
+        document.write(a.favmovies[2]+"<br>");
+        document.write(a.favmovies[3]+"<br>");
+        document.write("The length of the favmovies array is = "+a.favmovies.length+"<br>");
+
+        for(var i=0; i<a.favmovies.length; i++){
+            document.write(a.favmovies[i]+"<br>");
+        }
+        document.write("The salary is : "+a.salary()+"<br>");
+        document.write("The fullname is : "+a.fullname("swapnanil","Roy")+"<br>");
+        document.write("The city is : "+a.living.city+" ,  country is : "+a.living.country);
+        a.total();
+        document.write("<br>total arts marks = "+a.final_arts()+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

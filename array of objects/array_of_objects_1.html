@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var student = [
+            {
+                name : "mayuk",
+                age : 25,
+                phy: 99,
+                chem : 88,
+                math : 97,
+                calc_total : function(){
+                    var sum ;
+                    sum = this.phy + this.chem + this.math;
+                    return sum;
+                }
+            },
+            {
+                name : "suryendu",
+                age : 22,
+                phy: 91,
+                chem : 80,
+                math : 90,
+                calc_total : function(){
+                    var sum ;
+                    sum = this.phy + this.chem + this.math;
+                    return sum;
+                }
+            },
+            {
+                name : "aninda",
+                age : 20,
+                phy: 88,
+                chem : 75,
+                math : 64,
+                calc_total : function(){
+                    var sum ;
+                    sum = this.phy + this.chem + this.math;
+                    return sum;
+                }
+            },
+        ]
+
+        for(var i=0; i < student.length; i++){
+            document.write("name is : "+student[i].name+" , age is = "+student[i].age+" , total marks is = "+student[i].calc_total()+"<br>");
+        }
+        for(var i=0; i<student.length; i++){
+            document.write(student[i].name+" 's marks are <br>");
+            document.write("physics : "+student[i].phy+" , chemistry : "+student[i].chem+" , mathematics : "+student[i].math+"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = [40,35,60,15,30,55,50];
+
+        document.write("your array is : <br>");
+        a.forEach(function(value,index){
+            document.write(index+" : "+value+"<br>");
+        }
+        );
+        var sum = 0;
+        a.forEach(function(value,index){
+           /*  if(value % 2 == 0){
+                sum = sum + value; 
+            }   */
+
+           if(a[index]  % 2 == 0){
+                sum = sum + a[index] ; 
+            }  
+      
+        }
+        );
+        document.write("sumation of even elements is : "+sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

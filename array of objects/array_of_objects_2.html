@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var student = [
+            {
+                name : "mayuk",
+                age : 25,
+                science: {
+                    'phy': '99',
+                    'chem' : '88',
+                    'math' : '97'
+                },
+                address : {
+                    'city' : 'new jersey',
+                    'state' : 'oklohama',
+                    'country' : 'usa'
+                },
+                calc_total : function(){
+                    var sum ;
+                    sum = this.science.phy + this.science.chem + this.science.math;
+                    return sum;
+                }
+            },
+            {
+                name : "suryendu",
+                age : 22,
+                science: {
+                    'phy': '84',
+                    'chem' : '92',
+                    'math' : '90'
+                },
+                address : {
+                    'city' : 'seoul',
+                    'state' : 'gangnum',
+                    'country' : 'south-korea'
+                },
+                calc_total : function(){
+                    var sum ;
+                    sum = this.science.phy + this.science.chem + this.science.math;
+                    return sum;
+                }
+            },
+            {
+                name : "aninda",
+                age : 20,
+                science: {
+                    'phy': '79',
+                    'chem' : '83',
+                    'math' : '77'
+                },
+                address : {
+                    'city' : 'jadavpur',
+                    'state' : 'westbengal',
+                    'country' : 'India'
+                },
+                calc_total : function(){
+                    var sum ;
+                    sum = this.science.phy + this.science.chem + this.science.math;
+                    return sum;
+                }
+            },
+        ]
+
+        for(var i=0; i < student.length; i++){
+            document.write("name is : "+student[i].name+" , age is = "+student[i].age+" , total marks is = "+student[i].calc_total()+"<br>");
+        }
+        for(var i=0; i<student.length; i++){
+            document.write(student[i].name+" 's marks are <br>");
+            document.write("physics : "+student[i].science.phy+" , chemistry : "+student[i].science.chem+" , mathematics : "+student[i].science.math+"<br>");
+        }
+        for(var i=0; i<student.length; i++){
+            document.write(student[i].name+" 's address is <br>");
+            document.write("city : "+student[i].address.city+" , state : "+student[i].address.state+" , country : "+student[i].address.country+"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

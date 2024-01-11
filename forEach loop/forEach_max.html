@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = [40,35,65,25,30,55,50];
+
+        document.write("your array is : <br>");
+        a.forEach(function(value,index){
+            document.write(index+" : "+value+"<br>");
+        }
+        );
+         
+        var max = a[0];
+        a.forEach(function(value,index){
+            if(index < a.length - 1){
+                if(a[index+1] > max){
+                    max = a[index+1];
+                }
+            }
+        }
+        );
+         
+        document.write("The largest element is ="+max);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

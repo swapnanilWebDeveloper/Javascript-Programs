@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var individual = new Object();
+        var individual = {
+            f_name : "mayuk",
+            l_name : "mukherjee",
+            email : "Mayuk@gmail.com",
+            age : 18,
+            bengali : 84,
+            english : 86,
+            economics : 92,
+            accountancy : 72,
+            calc_science : function(){
+            var sum;
+            sum = this.science.phy + this.science.chem + this.science.math;
+            return sum;
+        },  
+         calc_arts : function(){
+              var sum = 0 ;
+              for(var i = 0; i < this.art_sub.length; i++){
+                  sum = sum + this.art_sub[i];
+              }
+              return sum;
+         }, 
+            address : {
+                'city' : 'ranaghat',
+                'district' : 'nadia',
+                'state' : 'westbengal',
+                'country' : 'India'
+            } 
+        }
+
+        individual.science = {
+            phy : 79,
+            chem : 88,
+            math : 97
+        };
+     
+        individual.calc_other = function(){
+            var total;
+            total = individual.bengali +  individual.english +  individual.economics +  individual.accountancy ;
+            return total;
+        }
+
+        individual.add_print = function(){
+            document.write("city : "+this.address.city+"<br>");
+            document.write("state : "+this.address.state+"<br>");
+            document.write("district : "+this.address.district+"<br>");
+            document.write("country : "+this.address.country+"<br>");
+        }
+
+        individual.art_sub = [66, 59, 72, 81];
+
+        document.write("Total number in science is !!!! = "+individual.calc_science()+"<br>");
+        document.write("Total number in other subjects is !!!! = "+individual.calc_other()+"<br>");
+        document.write("Total number in arts subjects is !!!! = "+individual.calc_arts()+"<br>");
+        individual.add_print();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var individual = new Object();
+        var individual = {
+            f_name : "mayuk",
+            l_name : "mukherjee",
+            email : "Mayuk@gmail.com",
+            age : 18,
+            address : {
+                'city' : 'ranaghat',
+                'district' : 'nadia',
+                'state' : 'westbengal',
+                'country' : 'India'
+            } 
+        }
+
+        individual.science = {
+            phy : 79,
+            chem : 88,
+            math : 97
+        };
+     
+        individual.calc_science = function(){
+            var sum;
+            sum = this.science.phy + this.science.chem + this.science.math;
+            return sum;
+        }
+
+        individual.print_science = function(){
+            document.write("marks in physics : "+this.science.phy+"<br>");
+            document.write("marks in chemistry : "+this.science.chem+"<br>");
+            document.write("marks in mathematics : "+this.science.math+"<br>");
+        }
+
+            individual.bengali = 84;
+            individual.english = 86;
+            individual.economics = 92;
+            individual.accountancy = 72;
+
+        individual.calc_other = function(){
+            var total;
+            total = individual.bengali +  individual.english +  individual.economics +  individual.accountancy ;
+            return total;
+        }
+
+        individual.print_other = function(){
+            document.write("marks in bengali is = "+this.bengali+"<br>");
+            document.write("marks in english is = "+this.english+"<br>");
+            document.write("marks in economics is = "+this.economics+"<br>");
+            document.write("marks in accountancy is = "+this.accountancy+"<br>");
+        }
+
+        individual.art_sub = [66, 59, 72, 81];
+
+        individual.calc_arts = function(){
+              var sum = 0 ;
+              for(var i = 0; i < this.art_sub.length; i++){
+                  sum = sum + this.art_sub[i];
+              }
+              return sum;
+         }  
+         
+         individual.print_arts = function(){
+              
+              for(var i = 0; i < this.art_sub.length; i++){
+                document.write("marks in subject "+(i+1)+"  is : "+this.art_sub[i]+"<br>");
+              }
+         } 
+
+         individual.address_print = function(){
+            document.write("city : "+this.address.city+"<br>");
+            document.write("district : "+this.address.district+"<br>");
+            document.write("state : "+this.address.state+"<br>");
+            document.write("country : "+this.address.country+"<br>");
+         }
+
+        document.write("Total number in science is !!!! = "+individual.calc_science()+"<br>");
+        individual.print_science();
+        document.write("Total number in other subjects is !!!! = "+individual.calc_other()+"<br>");
+        individual.print_other();
+        document.write("Total number in arts subjects is !!!! = "+individual.calc_arts()+"<br>");
+        individual.print_arts();
+        document.write("The address details is : <br>");
+        individual.address_print();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

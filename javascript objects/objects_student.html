@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var student = {
+          f_name : "Mayuk",
+          l_name : "mukherjee",
+          age : 17,
+          email : "mayuk@gmail.com",
+          fav_foods : ['pani puri','chat','pav-bhaji','lassi','chicken'],
+          arts_sub : [76, 82, 61, 55],
+          science_sub : {
+            'physics' : '99',
+            'chemistry' : '88',
+            'mathematics' : '92',
+            'biology' : '91'
+          },
+          economics : 84,
+          accountancy : 82,
+          bengali : 72,
+          english : 91,
+
+          prime : [11, 14, 28, 17, 39, 33, 41, 29, 77,78,79],
+
+          address: {
+            'city' : 'ranaghat',
+            'district' : 'Nadia',
+            'state' : 'westbengal',
+            'country' : 'India',
+            'pin_code' : '741201'
+          },
+
+          name_func : function(f_name, l_name){
+               document.write("father's name : "+f_name+" , mother's name : "+l_name+"<br>");
+               document.write("first name : "+this.f_name+" last name : "+this.l_name+"<br>");
+               document.write("Email address is : "+this.email+"<br>");
+          },
+
+          print_food : function(){
+            document.write("The favourite foods of student are =<br>");
+            for(var i=0; i<this.fav_foods.length; i++){
+                document.write(this.fav_foods[i]+"<br>");
+            }
+          },
+
+          add_print : function(){
+            document.write("city : "+this.address.city+"<br>");
+            document.write("district : "+this.address.district+"<br>");
+            document.write("state : "+this.address.state+"<br>");
+            document.write("country : "+this.address.country+"<br>");
+            document.write("pin-code : "+this.address.pin_code+"<br>");
+          }, 
+
+          arts_total : function(){
+                 var total =0;
+                 for(var i=0; i<this.arts_sub.length; i++){
+                      total = total + this.arts_sub[i];
+                }
+              //  document.write("Toatl marks for arts is = "+total+"<br>");
+                return total;
+          },
+
+          science_total : function(){
+            var sum;
+            sum = parseInt(this.science_sub.physics) + parseInt(this.science_sub.chemistry) + parseInt(this.science_sub.mathematics) + parseInt(this.science_sub.biology);
+            return sum;
+          },
+
+          other_sub : function(){
+             var sumation;
+             sumation = this.economics + this.accountancy + this.bengali + this.english;
+             return sumation;
+          },
+
+          is_prime : function(){
+              var num,N,sum=0, dig;
+              for(var j = 0; j < this.prime.length; j++){
+                num = this.prime[j];
+                for(var i = 2; i<num; i++){
+                if( num % i == 0){
+                    break;
+                }
+              }
+              if(i == num){
+                document.write(num+" is a prime number<br>");
+              }
+              else{
+                document.write(num+" is a not a prime number<br>");
+              }
+              } 
+          },
+
+          is_palindrome : function(num){
+                 var N , dig, sum = 0;
+                 N = num;
+                 while(N > 0){
+                    dig = parseInt(N % 10);
+                    sum = (sum + dig)*10;
+                    N = parseInt(N / 10);
+                }
+                sum = sum / 10 ;
+                document.write("The reverse of "+num+" is = "+sum+"<br>");
+                if(num == sum){
+                    return num+" is a palindrome<br>";
+                }
+                else{
+                    return num+" is not a palindrome<br>";
+                }
+          }
+       }
+       
+         document.write(student.is_palindrome(128321));
+         document.write("Total marks for arts is ="+student.arts_total()+"<br>");
+         document.write("The arts aubject individual marks is =<br>");
+         for(var i=0; i<student.arts_sub.length; i++){
+              document.write("arts subject "+(i+1)+" : "+student.arts_sub[i]+"<br>");
+         }
+         document.write("Total marks for science is ="+student.science_total()+"<br>");
+         document.write("physics = "+student.science_sub.physics+"<br> chemistry = "+student.science_sub.chemistry+"<br>mathematics = "+student.science_sub.mathematics+"<br> biology = "+student.science_sub.biology+"<br>");
+         document.write("The total marks for other subjects is = "+student.other_sub()+"<br>");
+         document.write("other subject marks are : <br>");
+         document.write("economics : "+student.economics+"<br> accountancy = "+student.accountancy+"<br> bengali = "+student.bengali+"<br> english = "+student.english+"<br>");
+         var other_total;
+         other_total = student.economics + student.accountancy + student.bengali + student.english;
+         document.write("the total for other subjects is = "+other_total+"<br>");
+         student.is_prime();
+         document.write("The address detail is : <br>");
+         student.add_print();
+         document.write("(confirm)The address details is : <br>");
+         document.write("city   is  : "+student.address.city+"<br>");
+         document.write("district   is  : "+student.address.district+"<br>");
+         document.write("state   is  : "+student.address.state+"<br>");
+         document.write("country   is  : "+student.address.country+"<br>");
+         document.write("pin-code   is  : "+student.address.pin_code+"<br>"); 
+         student.print_food();
+         document.write("<br>(confirm)The favourite foods of student are =<br>");
+            for(var i=0; i<student.fav_foods.length; i++){
+                document.write(student.fav_foods[i]+"<br>");
+            }
+        
+        student.name_func("kalyan mukherjee","ritashree mukherjee");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

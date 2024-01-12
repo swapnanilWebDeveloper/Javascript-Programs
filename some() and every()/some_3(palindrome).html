@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var pal_arr = [123, 342, 5634, 34543, 12321, 4456];
+
+        for(var i=0; i<pal_arr.length; i++){
+            document.write(pal_arr[i]+" ");
+        }
+        document.write("<br>");
+
+        var res = pal_arr.some(check_palinderome);
+        document.write(res+"<br>");
+
+        function check_palinderome(num){
+            var N,sum=0,dig;
+            N = num;
+            while(N > 0){
+                dig = parseInt(N % 10);
+                sum = (sum + dig) * 10;
+                N = parseInt(N / 10);
+            }
+            sum = sum / 10;
+            if( sum == num){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

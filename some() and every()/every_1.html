@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var age_arr = [10, 14, 16, 18, 20];
+
+        for(var i=0; i<age_arr.length; i++){
+            document.write(age_arr[i]+" ");
+        }
+        document.write("<br>");
+        
+        var b = age_arr.every(check_value);
+        document.write(b+"<br>");
+
+        function check_value(x){
+            return x >= 18;
+        }
+
+        var arr_data = [30, 24, 33, 46, 21];
+
+        for(var i=0; i<arr_data.length; i++){
+            document.write(arr_data[i]+" ");
+        }
+        document.write("<br>");
+        
+        var c = arr_data.every(check_data);
+        document.write(c+"<br>");
+
+        function check_data(p){
+            return p > 29;
+        }
+
+        var arr = [30, 24, 33, 46, 21];
+
+        for(var i=0; i<arr.length; i++){
+            document.write(arr[i]+" ");
+        }
+        document.write("<br>");
+        
+        var d = arr.every(check_higher);
+        document.write(d+"<br>");
+
+        function check_higher(l){
+            return l > 19;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ["mayuk" , 20, 45000,"barendra nagar","software developer"];
+        // before deleting
+        for(var i=0; i<arr.length; i++){
+            document.write(arr[i]+"  ");
+        }
+        document.write("<br>");
+        // delete array elements
+        delete arr[0];
+        document.write("after deleting one element<br>");
+        for(var i=0; i<arr.length; i++){
+            document.write(arr[i]+"  ");
+        }
+        document.write("<br>"); 
+
+        delete arr[1];
+        document.write("after deleting two elements<br>");
+        for(var i=0; i<arr.length; i++){
+            document.write(arr[i]+"  ");
+        }
+        document.write("<br>");
+
+        delete arr[2];
+        document.write("after deleting three elements<br>");
+        for(var i=0; i<arr.length; i++){
+            document.write(arr[i]+"  ");
+        }
+        document.write("<br>");
+
+        delete arr[3];
+        document.write("after deleting four elements<br>");
+        for(var i=0; i<arr.length; i++){
+            document.write(arr[i]+"  ");
+        }        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

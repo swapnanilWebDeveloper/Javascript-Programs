@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [
+            ["mayuk",22,45000,"barendra nagar"],
+            ["suryendu",24,60000,"Thana para"],
+            ["Aninda",26,75000,"Ranaghat"],
+            ["Swapnanil",19,15000,"uttar para"],
+            ["sanlap",29,16000,"rail gate"],
+            ["souvik",32,56000,"chabi gate"],
+           
+        ];
+        var arr_mod = [
+            ["name","age","salary","address"]
+        ];
+        document.write("The length of the array is = "+arr.length+"<br>");
+        for(var i = 0; i < arr.length; i++){
+            for(var j = 0; j < arr[i].length; j++){
+                document.write(arr_mod[0][j]+"  is : "+arr[i][j] + "  ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

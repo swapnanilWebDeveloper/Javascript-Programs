@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = new Array();
+        
+        for(var j=0; j<5; j++){
+            arr[j] = parseInt(prompt("Enter the "+j+" th element of array"));
+        }
+
+        var max = parseInt(arr[0]);
+        
+        document.write("your array is : <br>");
+        for(var i=0; i<5; i++){
+            document.write(arr[i]+"<br>");
+        }
+
+        for(var i=1; i<5; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        
+        document.write("largest element is = "+max);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = ["ajay","akshay","ranbir"];
+        var mod = ["rohit","virat"];
+        var res = str.concat(mod);
+
+        document.write(res+"original array<br><br>");
+
+        // after join function the (var d) is a single complete single string value
+
+        var value1 = res.join(" ");
+        document.write("join two arrays into single string value by ' ' (symbol)<br>");
+        document.write(value1+"<br>");
+
+        var value2 = res.join("-");
+        document.write("join two arrays into single string value by '-' (symbol)<br>");
+        document.write(value2+"<br>");
+
+        var value3 = res.join("/");
+        document.write("join two arrays into single string value by '/' (symbol)<br>");
+        document.write(value3+"<br>");
+
+        var value4 = res.join(":");
+        document.write("join two arrays into single string value by ':' (symbol)<br>");
+        document.write(value4+"<br>");
+
+        var value5 = res.join("<br>");
+        document.write("join two arrays into single string value by 'br' (tag)<br>");
+        document.write(value5+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = ["dhoni","virat","yuvraj","gautam","harvajan","rahul","rohit","ishant"];
+
+        document.write("original array is :<br>");
+        for(var i=0; i<a.length; i++){
+            document.write(a[i]+" ");
+        }
+        document.write("<br>");
+
+        var b = a.slice(-6,-3);
+       
+        var c = a.slice(-7,-2);
+
+
+        
+        document.write("after slicing array is :<br>");
+        for(var i=0; i<b.length; i++){
+            document.write(b[i]+" ");
+        }
+        document.write("<br>");
+
+        document.write("after slicing array is :<br>");
+        for(var i=0; i<c.length; i++){
+            document.write(c[i]+" ");
+        }
+        document.write("<br>");
+
+         // another format
+         var d = a.slice(-3);
+        var e = a.slice(-6);
+
+        document.write("after slicing array is :<br>");
+        for(var i=0; i<d.length; i++){
+            document.write(d[i]+" ");
+        }
+        document.write("<br>");
+
+        document.write("after slicing array is :<br>");
+        for(var i=0; i<e.length; i++){
+            document.write(e[i]+" ");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

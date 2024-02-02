@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = ["mayuk","suryendu","aninda"];
+        var b = ["sanlap","souvik"];
+        var c = a.concat(b);
+
+        document.write(c+"original array<br><br>");
+
+        // after join function the (var d) is a single complete single string value
+
+        var d = c.join(" ");
+        document.write("join two arrays into single string value by ' ' (symbol)<br>");
+        document.write(d+"<br>");
+
+        var e = c.join("-");
+        document.write("join two arrays into single string value by '-' (symbol)<br>");
+        document.write(e+"<br>");
+
+        var f = c.join("/");
+        document.write("join two arrays into single string value by '/' (symbol)<br>");
+        document.write(f+"<br>");
+
+        var g = c.join(":");
+        document.write("join two arrays into single string value by ':' (symbol)<br>");
+        document.write(g+"<br>");
+
+        var h = c.join("<br>");
+        document.write("join two arrays into single string value by 'br' (tag)<br>");
+        document.write(h+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = ["dhoni", "virat", "rohit", "yuvraj"];
+
+        document.write("your array is : <br>");
+        for (var i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+
+        // splice function is executed
+        a.splice(2, 0, "gambhir", "raina");
+
+        document.write("after splicing array is : <br>");
+        for (var i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+
+        a.splice(3, 2, "steve", "captain");
+
+        document.write("after splicing array is : <br>");
+        for (var i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+
+        a.splice(-3, 1, "Britain", "America");
+
+        document.write("after splicing array is : <br>");
+        for (var i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+
+        a.splice(4, 2);
+
+        document.write("after splicing array is : <br>");
+        for (var i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

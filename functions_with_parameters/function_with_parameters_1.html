@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myName( f_name, l_name){
+            document.write("my name is = :"+f_name+" "+l_name);
+        }
+
+        function biodata(name,mother,father = "Amaresh", age = 24){
+               document.write("name ="+name+"<br>");
+               document.write("father's name = "+father+" <br>");
+               document.write("Mother's name is = "+mother+"<br>");
+               document.write("My age is ="+age+"<br>");
+        }
+        function myAddress(city="ranaghat" , dist=" nadia", state="westbengal"){
+            document.write("my city is : "+city+"<br>");
+            document.write("my district is : "+dist+"<br>");
+            document.write("my state is : "+state+"<br>");
+        }
+        function myFunction(fnm = "yahoo" , lnm = "baba"){
+            document.write("hello  "+fnm+"   "+lnm+"<br>");
+        }
+
+        myName("swapnanil" , "roy");
+        document.write("<br>second function executes<br>");
+        biodata("swapnanil" , "sikha biswas");
+        document.write("<br>third function executes<br>");
+        myAddress();
+        document.write("<br>fourth function executes<br>");
+        myFunction("technical" , "thapa");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

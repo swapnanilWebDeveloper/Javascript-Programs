@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function caculate_weight(mass, g=9.8){
+            var wt ;
+            wt = mass * g;
+            document.write("Weight of that body is = "+wt+" newton<br>");
+        }
+        function calc_volume(ht, wd, btd=3){
+            var vol;
+            vol = ht * wd * btd ;
+            document.write("volume of that cube = "+vol+"<br>");
+        }
+        function sum( a,b){
+            var c;
+            c = a+b;
+            document.write("sumation = "+c+"<br>");
+        }
+        function subs( x, y ){
+            var num;
+            num = x - y;
+            document.write("substraction is ="+num+"<br>");
+        }
+        function mult( p, q){
+            var res;
+            res = p * q;
+            document.write("multiplication is ="+res+"<br>");
+        }
+        function div( l,m ){
+            var temp;
+            temp = l /m ;
+            document.write("division is = "+temp+"<br>");
+        }
+
+        caculate_weight(5);
+        calc_volume(12,10);
+        sum(14,5);
+        subs(23,8);
+        mult(6,4);
+        div(24,3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

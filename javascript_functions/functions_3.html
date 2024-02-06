@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum_digit(){
+            var num = 15263;
+            var N = num;
+            var dig;
+            var sum = 0;
+            for(var N = num; N>=1; N = parseInt(N/10)){
+                dig = parseInt(N % 10);
+                sum = sum +dig ; 
+            }
+            document.write("sumation of digits of "+num+" is = "+sum);
+        }
+        sum_digit();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function is_amstrong( num ){
+            var N,dig,sum=0;
+             N = num;
+            for(N = num ; N > 0; N = parseInt(N /10)){
+                dig = parseInt(N % 10);
+                sum = sum + dig * dig * dig;
+            }
+            if(num == sum){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        var num1 = is_amstrong(374);
+        if(num1){
+            document.write(" is an amstrong number<br>");
+        }
+        else{
+            document.write(" is not an amstrong number<br>");  
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

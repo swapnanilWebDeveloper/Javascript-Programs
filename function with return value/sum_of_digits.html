@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum_digit(num){
+                var N,dig,sum;
+                sum = 0;
+                N = num;
+                while( N > 0){
+                    dig = parseInt(N % 10);
+                    sum = sum + dig ;
+                    N = parseInt(N / 10);
+                }
+                return sum;
+        }
+        var result = sum_digit(547389);
+        var result1 = sum_digit(23411);
+        var result2 = sum_digit(115232);
+        var result3 = sum_digit(913121);
+        document.write(result+"<br>");
+        document.write(result1+"<br>");
+        document.write(result2+"<br>");
+        document.write(result3+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

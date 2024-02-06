@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         
+         function find_leap(){
+            var yr = 1840;
+            
+            if(yr % 100 == 0){
+                if( yr % 400 == 0){
+                    document.write(yr+" is the leap year");
+                }
+                else{
+                    document.write(yr+" is not a leap year");
+                }
+            }
+            else{
+                if(yr % 4 == 0){
+                    document.write(yr+" is a leap year");
+                }
+                else{
+                    document.write(yr+" is not a leap year");
+                }
+            }
+         }
+
+         find_leap();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

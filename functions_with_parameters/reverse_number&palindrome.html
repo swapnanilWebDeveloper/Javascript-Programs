@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function reverse(num){
+            var N, dig , sum;
+            N = num;
+            sum = 0;
+            while( N> 0){
+                dig =parseInt( N % 10 );
+                sum = (sum + dig) *10 ;
+                N = parseInt(N / 10);
+            }
+            sum = parseInt(sum / 10);
+            document.write("The reverse of "+num+" is = "+sum+"<br>");
+            if( num == sum ){
+                document.write("This is a palindrome number");
+            }
+            else{
+                document.write("this is not a palindrome number");
+            }
+        }
+
+        reverse(123454321);
+        document.write("<br>");
+        reverse(54321);
+        document.write("<br>");
+        reverse(4567654);
+        document.write("<br>");
+        reverse(36478);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+
+        function fullname(fname = "Yahoo", lname="Baba"){
+            var a = fname+" - "+lname+"<br>";
+
+            return a;
+        }
+        
+         function company_details(nm, loc, post, exp = 5, salary = 22000, ){
+            var data ;
+            data = "name of the employee: "+nm+", <br> location : "+loc+",<br> job position : "+post+" ,<br> experience : "+exp+" ,<br> salary : "+salary+"<br>";
+            return data; 
+        }
+
+        var fn = fullname("ram", "singh");
+        document.write(fn);
+
+        var com1 = company_details("swapnanil roy","kolkata","webdeveloper", 3);
+        document.write(com1);
+
+        var com2 = company_details("Mayuk Mukherjee","Bangalore","cpp developer", 8);
+        document.write(com2);
+     </script>
+</head>
+<body>
+    
+</body>
+</html>

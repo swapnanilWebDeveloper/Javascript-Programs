@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #information{
+            color: green;
+            background-color: aqua;
+            border: 5px solid red;
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+            margin-left: 70px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="information">
+        This is an information
+    </p>
+</body>
+<script>
+       document.getElementById('information').addEventListener("click",style_modify);
+       document.getElementById('information').addEventListener("dblclick",modify_statement);
+       document.getElementById('information').addEventListener("contextmenu",function(){
+        var para = document.getElementById('information');
+
+        para.innerText = "Information is changed";
+        para.style.color = "aqua";
+       });
+
+       function style_modify(){
+          var element = document.getElementById('information');
+
+          element.style.color = "yellow";
+          element.style.backgroundColor = "brown";
+          element.style.border = "12px solid green";
+          element.style.borderRadius = "20px";
+       }
+
+       function modify_statement(){
+        var item = document.getElementById('information');
+
+        item.style.fontSize = "25px";
+        item.style.paddingTop = "40px";
+        item.style.marginTop = "100px";
+        item.style.marginLeft = "100px";
+       }
+</script>
+</html>

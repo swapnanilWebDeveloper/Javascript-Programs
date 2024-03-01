@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="cricket1">
+        <li>Virat Kohli</li>
+        <li>Sachin Tendulker</li>
+        <li>MS Dhoni</li>
+        <li>Sorav Ganguly</li>
+    </ul>
+
+    <div id="cricket2">
+        <p>Viv Richards</p>
+        <h4>Don Bradman</h4>
+        <span>Chris Gayle</span>
+    </div>
+</body>
+      <script>
+             var crick = document.getElementById("cricket1").children[1];
+             var copy = crick.cloneNode(true);
+
+             var target = document.getElementById("cricket2");
+             target.appendChild(copy);
+      </script>
+</html>

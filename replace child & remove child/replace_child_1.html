@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+        <li>Jack fruit</li>
+    </ul>
+</body>
+  
+      <script>
+               var newElement = document.createElement("li");
+               var newText = document.createTextNode("Hi , I am a new fruit");
+               
+               newElement.appendChild(newText);
+
+               var target = document.getElementById("list");
+               var oldElement = target.children[1];
+
+               target.replaceChild(newElement,oldElement);
+      </script>
+   
+</html>

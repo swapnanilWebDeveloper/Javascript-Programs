@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div id="BCCI">
+        <p>Virat</p>
+        <p>Sachin</p>
+        <h4>Dhoni</h4>
+        <span>gautam</span>
+        <h3>Dravid</h3>
+        <p>Yuvraj</p>
+      </div>
+</body>     
+      <script>
+              var crick_element = document.createElement("h2");
+              var crick_text = document.createTextNode("Swapnanil Roy");
+
+              crick_element.appendChild(crick_text);
+
+              var aim = document.getElementById("BCCI");
+              var old_crick = aim.children[3];
+
+              aim.replaceChild(crick_element,old_crick);
+      </script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #apple {
+            width: 400px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        #banana {
+            width: 400px;
+            height: 150px;
+            background-color: blueviolet;
+        }
+
+        #lichi {
+            width: 300px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="apple">
+        <p>This is an apple paragraph</p>
+    </div>
+
+    <div id="banana">
+        <p>This is an banana paragraph</p>
+    </div>
+
+    <div id="lichi">
+        <p>This is an lichi paragraph</p>
+    </div>
+</body>
+
+    <script>
+        var newItem = document.createElement("h2");
+
+        var textItem = document.createTextNode("I am an item of apple production");
+
+        var target = document.getElementById("apple");
+
+        newItem.appendChild(textItem);
+
+        target.insertAdjacentElement("afterbegin", newItem);
+
+      // operation for the next div id = "banana"
+        var newItem1 = document.createElement("h4");
+
+        var textItem1 = document.createTextNode("I am an item of banana production");
+
+        var target1 = document.getElementById("banana");
+
+        newItem1.appendChild(textItem1);
+
+        target1.insertAdjacentElement("beforeend", newItem1);
+
+        // operation for lichi production
+
+        var lichiItem = document.createElement("h3");
+
+        var lichiText = document.createTextNode("I am a product of lichi company");
+
+        var target_lichi = document.getElementById("lichi");
+
+        lichiItem.appendChild(lichiText);
+
+        target_lichi.insertAdjacentElement("afterend",lichiItem);
+    </script>
+
+</html>

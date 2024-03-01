@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+        <h2>Yahoo Baba : Javascript hasAttribute method()</h2>
+        <P>This is a simple paragraph</P>
+    </div>
+
+    <div id="box" class="">
+        <h2>Yahoo Baba : Javascript hasAttribute method()</h2>
+        <P>This is a simple paragraph</P>
+    </div>
+
+    <div id="square" class="abc">
+        <h2>Yahoo Baba : Javascript hasAttribute method()</h2>
+        <P>This is a simple paragraph</P>
+    </div>
+</body>
+     <script>
+           var target = document.getElementById("test");
+           var find = target.hasAttribute("class");
+
+           console.log(find);
+
+           var target1 = document.getElementById("box");
+           var find1 = target1.hasAttribute("class");
+
+           console.log(find1);
+
+           var target2 = document.getElementById("square");
+           var find2 = target2.hasAttribute("class");
+
+           console.log(find2);
+     </script>
+</html>

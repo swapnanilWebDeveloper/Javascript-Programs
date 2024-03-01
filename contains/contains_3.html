@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+        <h2>Yahoo Baba: Javascript contains method</h2>
+        <p>This is first paragraph</p>
+        <p >
+            <div id="coding">This is second paragraph</div>
+        </p>
+        <h2>mongo db</h2>
+        <p>database</p>
+        <p>
+            <div>
+                <div  id="programming">Tables</div>
+            </div>
+        </p>
+    </div>
+</body>
+
+      <script>
+             var parent = document.getElementById("test");
+             var target1  = document.getElementById("coding");
+             var target2  = document.getElementById("abc");
+             var target3  = document.getElementById("programming");
+
+             var find = parent.contains(target1);  
+
+             console.log(find);
+
+             find = parent.contains(target2);  
+
+             console.log(find);
+
+             find = parent.contains(target3);  
+
+             console.log(find);
+      </script>    
+</html>

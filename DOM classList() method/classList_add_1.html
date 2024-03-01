@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            color: aqua;
+            background-color: darkviolet;
+        }
+        .xyz{
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+       <p id="header" class="abc">
+        this is a statement
+       </p>
+</body>
+
+<script>
+    document.getElementById('header').addEventListener("click",add_class);
+
+    function add_class(){
+        document.getElementById('header').classList.add("xyz");
+    }
+  </script>
+</html>

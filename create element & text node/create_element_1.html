@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      
+     <h1>Yahoo Baba : DOM create methods</h1>
+     <button onclick="create_element()">click to create</button>
+</body>
+<script>
+
+        function create_element(){
+            var element = document.createElement("h2");
+            console.log(element);
+
+            var text = document.createTextNode("I greet you .....good morning!!");
+            console.log(text);
+
+            var cmt = document.createComment("This is a comment");
+            console.log(cmt);
+        }
+</script>
+</html>

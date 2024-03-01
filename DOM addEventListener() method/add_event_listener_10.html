@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            color: white;
+            background-color: red;
+            border: 8px solid green;
+            font-size: 10px;
+            border-radius: 8px;
+            width: 100px;
+            height: 80px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">
+        This is a paragraph
+    </p>
+</body>
+<script>
+       document.getElementById('para').addEventListener("contextmenu",change_property);
+       document.getElementById('para').addEventListener("contextmenu",change_paragraph);
+       document.getElementById('para').addEventListener("contextmenu",function(){
+
+        this.innerText = "paragraph is changed";
+        this.style.color = "aqua";
+       });
+
+       function change_property(){
+        var prop = document.getElementById('para');
+
+        prop.style.color = "yellow";
+        prop.style.backgroundColor="brown";
+        prop.style.border="15px solid pink";
+        prop.style.borderRadius="20px";
+        prop.style.width="300px";
+        prop.style.height="120px";
+        prop.style.fontSize="20px";
+       }
+
+       function change_paragraph(){
+        var paragraph = document.getElementById('para');
+
+        paragraph.style.marginLeft="100px";
+        paragraph.style.marginTop="100px";
+        paragraph.style.paddingTop="50px";
+        paragraph.style.paddingLeft="50px";
+       }
+</script>
+</html>

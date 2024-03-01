@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #statement1{
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            margin-left: 60px;
+            margin-top: 50px; 
+        }
+        #statement2{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 40px; 
+        }
+        #statement3{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            margin: 25px;
+        }
+        #statement4{
+            width: 170px;
+            height: 170px;
+            background-color: greenyellow;
+            margin: 20px; 
+        }
+        #statement5{
+            width: 130px;
+            height: 130px;
+            background-color: goldenrod;
+            margin: 10px; 
+        }
+        #statement6{
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body> 
+      <div id="statement1">
+          statement1
+        <div id="statement2">
+            statement2
+            <div id="statement3">
+                statement3
+              <div id="statement4">
+                  statement4
+                  <div id="statement5">
+                    statement5
+                  <div id="statement6">
+                      statement6
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</body>
+
+  <script>
+         document.getElementById('statement1').addEventListener('click',function(){
+            alert('statement1 is executing');
+         },true);
+
+         document.getElementById('statement2').addEventListener('click',function(){
+            alert('statement2 is executing');
+         },true);
+
+         document.getElementById('statement3').addEventListener('click',function(){
+            alert('statement3 is executing');
+         },true);
+
+         document.getElementById('statement4').addEventListener('click',function(){
+            alert('statement4 is executing');
+         },true);
+         document.getElementById('statement5').addEventListener('click',function(){
+            alert('statement5 is executing');
+         },true);
+
+         document.getElementById('statement6').addEventListener('click',function(){
+            alert('statement6 is executing');
+         },true);
+  </script>
+</html>

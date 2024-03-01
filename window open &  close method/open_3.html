@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="open_newTab()">click to open a window in new tab</button>
+    <button onclick="open_sameTab()">clickto open a window in same tab</button>
+</body>
+      <script>
+           function open_newTab(){
+             window.open("http://www.google.com","_blank");
+           }
+
+           function open_sameTab(){
+             window.open("http://www.youtube.com","_parent");
+           }
+      </script>
+</html>

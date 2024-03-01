@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            color: red;
+            background-color: yellow;
+            border: 5px solid green;
+            width: 200px;
+            height: 80px;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bolder;
+            margin-left: 100px;
+            margin-top: 60px;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="header" class="abc">
+        This is eventListener method
+    </h2>
+</body>
+<script>
+       document.getElementById("header").onclick = change_style;
+
+       function change_style(){
+        var change = document.getElementById("header");
+
+        change.style.color = "aqua";
+        change.style.backgroundColor = "brown";
+       }
+</script>
+</html>

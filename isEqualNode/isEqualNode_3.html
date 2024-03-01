@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="para">
+        <span>
+            <h4>heading</h4>
+        </span>
+        <p>heading</p>
+        <p>
+            <h4>heading</h4>
+        </p>
+    </div>
+
+    <div id="test">
+        <p>
+            <h4>heading</h4>
+        </p>
+       
+        <h3>heading</h3>
+
+        <span>heading</span>
+    </div>
+</body>
+
+     <script>
+            var target1 = document.getElementById("para");
+            var target2 = document.getElementById("test");
+            var equal;
+
+             for(var i = 0; i  < 3; i++){
+            
+                for(var j = 0; j < 3; j++){
+                   equal = target1.children[i].isEqualNode(target2.children[j]);
+                   
+                   console.log(equal);
+                }
+             }
+     </script>
+</html>

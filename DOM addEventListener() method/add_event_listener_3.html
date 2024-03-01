@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #statement{
+           color: aqua;
+           background-color: red;
+           border: 9px solid green;
+           width: 300px;
+           height: 100px;
+           border-radius: 10px;
+           margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="statement">
+        this is a heading
+    </h3>
+</body>
+<script>
+       document.getElementById('statement').onclick = style_change;
+       document.getElementById('statement').ondblclick = change_stat;
+
+       function style_change(){
+        var stat = document.getElementById('statement');
+
+          stat.style.color = "yellow";
+          stat.backgroundColor = "pink";
+          stat.style.height = "200px";
+          stat.style.border = "4px solid black";
+          stat.style.borderRadius="30px";
+          stat.style.marginTop = "100px";
+          stat.style.marginLeft="200px";               
+       }
+
+       function change_stat(){
+          var sentense = document.getElementById('statement');
+        
+          sentense.innerText = "Heading is changed";
+       }
+</script>
+</html>

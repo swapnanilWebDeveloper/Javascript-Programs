@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation</title>
+    <style>
+        #test{
+            width: 450px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+      <h1>Yahoo Baba : DOM append Methods</h1> 
+
+      <div id="test">
+        <h5>number 1 : This below h2 statement is dynamically created</h5>
+        <h5>number 2 : This below h2 statement is dynamically created</h5>
+        <h5>number 3 : This below h2 statement is dynamically created</h5>
+      </div>
+</body>
+  <script> 
+           var newElement = document.createElement("h2");
+           var newText = document.createTextNode("This is a text  created of append child ");
+           var item = document.getElementById("test");
+
+           newElement.appendChild(newText);
+
+           item.appendChild(newElement);
+  </script>
+</html>

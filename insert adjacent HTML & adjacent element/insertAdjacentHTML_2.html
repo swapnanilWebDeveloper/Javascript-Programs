@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+           background-color: orange;
+           width: 400px;
+           height: 200px;
+           border: 2px solid black;
+        }
+        #cube{
+           background-color: greenyellow;
+           width: 300px;
+           height: 150px;
+           border: 2px solid black;
+        }
+        #rectangle{
+           background-color: pink;
+           width: 250px;
+           height: 180px;
+           border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+     <div id="box">
+        <p>It is a box</p>
+     </div>
+
+     <div id="cube">
+        <p>It is a cube</p>
+     </div>
+
+     <div id="rectangle">
+        <p>It is a cube</p>
+     </div>
+</body>
+<script>
+
+    var box_element = "<h4>This is a box product</h4>";
+
+    var target_box = document.getElementById("box");
+
+    target_box.insertAdjacentHTML("afterbegin",box_element);
+
+    // cube opeartion for html element
+
+    var cube_element = "<h4>This is a cube product</h4>";
+
+    var target_cube = document.getElementById("cube");
+
+    target_cube.insertAdjacentHTML("beforeend",cube_element);
+
+     // rectangle opeartion for html element
+
+     var rectangle = "<h4>This is arectangle product</h4>";
+
+     var target_rectangle = document.getElementById("rectangle");
+
+     target_rectangle.insertAdjacentHTML("afterend",rectangle);
+
+</script>
+</html>

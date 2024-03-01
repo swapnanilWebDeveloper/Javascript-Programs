@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: orange;
+            width: 400px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <h3>This is statement 1</h3>
+        <p>This is statement 2</p>
+        <span>This is statement 3</span>
+        <h3>This is statement 4</h3>
+        <p>This is statement 5</p>
+        <span>This is statement 6</span>
+    </div>
+</body>
+ <script>
+        var new_tag = document.createElement("h5");
+        var new_text = document.createTextNode("This is text node, created dynamically");
+        var element = document.getElementById('test');
+        
+        new_tag.appendChild(new_text);
+        element.insertBefore(new_tag,element.children[2]);
+
+        var alt_tag = document.createElement("h5");
+        var alt_text = document.createTextNode("This text has been inserted before");
+        var comp = document.getElementById('test');
+        
+        alt_tag.appendChild(alt_text);
+        comp.insertBefore(alt_tag,element.children[4]);
+        
+ </script>
+</html>

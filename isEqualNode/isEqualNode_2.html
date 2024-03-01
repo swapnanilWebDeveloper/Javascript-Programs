@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list_1">
+        <li>Orange</li>
+        <li class="">Orange</li>
+        <li class="abc">Orange</li>
+        <li class="xyz">Orange</li>
+    </ul>
+
+    <ul id="list_2">
+        <li class="abc">Orange</li>
+        <li class="fgh">Orange</li>
+    </ul>
+</body>
+<script>
+    var target1 = document.getElementById("list_1").children[0];
+
+    var target2 = document.getElementById("list_2").children[0];
+
+    var equal = target1.isEqualNode(target2);
+
+    console.log(equal);
+
+    target1 = document.getElementById("list_1").children[0];
+
+    target2 = document.getElementById("list_2").children[1];
+
+    equal = target1.isEqualNode(target2);
+
+    console.log(equal);
+
+    target1 = document.getElementById("list_1").children[1];
+
+    target2 = document.getElementById("list_2").children[0];
+
+    equal = target1.isEqualNode(target2);
+
+    console.log(equal);
+     
+    target1 = document.getElementById("list_1").children[1];
+
+    target2 = document.getElementById("list_2").children[1];
+
+    equal = target1.isEqualNode(target2);
+
+    console.log(equal);
+
+    target1 = document.getElementById("list_1").children[2];
+
+    target2 = document.getElementById("list_2").children[0];
+
+    equal = target1.isEqualNode(target2);
+
+    console.log(equal);
+
+    target1 = document.getElementById("list_1").children[2];
+
+    target2 = document.getElementById("list_2").children[1];
+
+    equal = target1.isEqualNode(target2);
+
+    console.log(equal);
+
+</script>
+
+</html>

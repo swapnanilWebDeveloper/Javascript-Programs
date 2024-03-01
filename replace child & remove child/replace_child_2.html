@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="cream">
+        <li>vanilla</li>
+        <li>butter scotch</li>
+        <li>chocolate</li>
+        <li>mango</li>
+        <li>straw berry</li>
+    </ul>
+</body>
+  
+      <script>
+               var ice_element = document.createElement("cream");
+               var ice_text = document.createTextNode("two in one");
+               
+               ice_element.appendChild(ice_text);
+
+               var focus = document.getElementById("cream");
+               var old_ice = focus.children[3];
+
+               focus.replaceChild(ice_element, old_ice);
+      </script>
+   
+</html>

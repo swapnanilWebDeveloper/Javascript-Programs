@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            margin-left: 60px;
+            margin-top: 50px; 
+        }
+        #inner{
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            margin: 50px; 
+        }
+    </style>
+</head>
+<body> 
+      <div id="outer">
+        outer div
+        <div id="inner">
+            inner div
+        </div>
+      </div>
+</body>
+
+  <script>
+         document.getElementById('inner').addEventListener('click',function(){
+            alert('Inner div is executing');
+         })
+
+         document.getElementById('outer').addEventListener('click',function(){
+            alert('outer div is executing');
+         })
+  </script>
+</html>

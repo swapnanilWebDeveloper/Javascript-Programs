@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            color: aqua;
+            background-color: darkviolet;
+        }
+        .second{
+            color: yellow;
+            background-color: red;
+            width: 300px;
+            height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+       <p id="header" class="first">
+        this is a statement
+       </p>
+</body>
+
+<script>
+    document.getElementById('header').addEventListener("click",add_class);
+
+    function add_class(){
+        document.getElementById('header').classList.add("second");
+    }
+  </script>
+</html>

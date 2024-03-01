@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="actor">
+        <h3>Akshay Kumar</h3>
+        <p>Rajesh Khanna</p>
+        <span>Shahrukh Khan</span>
+        <h4>Ajay Devgan</h4>
+        <p>Anil Kapoor</p>
+        <span>Amitav Bachhan</span>
+    </div>
+</body>
+
+      <script>
+            var target = document.getElementById("actor");
+            var old_actor = target.children[1];
+
+            target.removeChild(old_actor);
+      </script>
+</html>

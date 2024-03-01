@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #outer{
+            background-color: orange;
+            width: 600px;
+            height: 300px;
+          }
+          #middle{
+            background-color: pink;
+            width: 480px;
+            height: 210px;
+            margin-top: 30px;
+            margin-left: 30px;
+          }
+          #inner{
+            background-color: rgb(81, 234, 89);
+            width: 350px;
+            height: 120px;
+            margin-top: 8px;
+            margin-left: 30px;
+          }
+
+          #child_A{
+            width: 35px;
+            height: 35px;
+            margin-left: 10px;
+            float: left;
+            background-color: green;
+          }
+          #child_B{
+            width: 35px;
+            height: 35px;
+            margin-left: 10px;
+            float: left;
+            background-color: green;
+          }
+          #child_C{
+            width: 35px;
+            height: 35px;
+            margin-left: 10px;
+            float: left;
+            background-color: green;
+          }
+        
+          #child_D{
+            width: 35px;
+            height: 35px;
+            margin-left: 10px;
+            float: left;
+            background-color: green;
+          }
+          #child_E{
+            width: 35px;
+            height: 35px;
+            margin-left: 10px;
+            float: left;
+            background-color: green;
+          }
+    </style>
+</head>
+<body>
+      <div id="outer">
+        <h2>outer</h2>
+         <div id="middle">
+            <h2>middle</h2>
+            <div id="inner">
+              <h2>inner</h2>
+             <div id="child_A">A</div>
+             <div id="child_B">B</div>
+             <div id="child_C">C</div>
+             <div id="child_D">D</div>
+             <div id="child_E">E</div>
+            </div>
+        </div>
+      </div>
+</body>
+<script>
+      document.getElementById("middle").addEventListener("click",modify_children);
+
+      function modify_children(){
+        var element = document.getElementById('middle').children[1];
+
+        element.style.color = "red";
+        element.style.backgroundColor = "aqua";
+        element.style.width = "400px";
+        element.style.border = "10px solid brown";
+
+        var child = document.getElementById('middle').children[0];
+         
+        child.style.color = "red";
+        child.style.backgroundColor="green";
+        child.style.border = "3px solid blue";
+        child.style.width = "200px";
+        child.style.marginLeft="30px";
+        child.style.paddingLeft="80px";
+      }
+</script>
+</html>

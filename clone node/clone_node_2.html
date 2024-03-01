@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="celeb1">
+        <li>Akshay Kumar</li>
+        <li>Ajay Devgan</li>
+        <li>Salman Khan</li>
+        <li>Shahrukh Khan</li>
+    </ul>
+
+    <ul id="celeb2">
+        <li>Justin Bieber</li>
+        <li>Miley Cyrus</li>
+        <li>Bradley Cooper</li>
+    </ul>
+</body>
+      <script>
+             var bollywood = document.getElementById("celeb1").children[2];
+             var copy = bollywood.cloneNode(true);
+
+             var target = document.getElementById("celeb2");
+             target.appendChild(copy);
+      </script>
+</html>

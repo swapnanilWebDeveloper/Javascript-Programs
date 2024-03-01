@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDIV{
+            background-color: lightblue;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The create element</h2>
+
+    <p> create a p element and append it to "my div" : </p>
+
+    <div id="myDIV">
+        <h3>A DIV element</h3>
+    </div>
+</body>
+<script>
+    const para = document.createElement("p");
+    para.innerHTML = "This is a appeend child : paragraph";
+
+    // append to another element:
+    document.getElementById("myDIV").appendChild(para);
+</script>
+</html>

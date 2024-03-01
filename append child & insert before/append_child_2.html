@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #item{
+            width : 300px;
+            height: 250px;
+            background-color: pink;
+            color : green;
+        }
+    </style>
+</head>
+<body>
+     <h1>I am swapnanil</h1>
+     <div id="item">
+        <h5>number 1 : it is a noraml text inside h5 tag</h5>
+        <h5>number 2 : it is a noraml text inside h5 tag</h5>
+        <h5>number 3 : it is a noraml text inside h5 tag</h5>
+        <h5>number 4 : it is a noraml text inside h5 tag</h5>
+     </div>
+</body>
+   <script>
+            var newItem = document.createElement("p");
+            var textItem = document.createTextNode("This text is created by append child");
+            var element = document.getElementById("item");
+            
+            newItem.appendChild(textItem);
+            element.appendChild(newItem);
+   </script>
+</html>

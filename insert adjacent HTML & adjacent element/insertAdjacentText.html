@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+           background-color: orange;
+           width: 400px;
+           height: 200px;
+           border: 2px solid black;
+        }
+
+        #cube{
+           background-color: greenyellow;
+           width: 300px;
+           height: 150px;
+           border: 2px solid black;
+        }
+
+        #rectangle{
+           background-color: pink;
+           width: 250px;
+           height: 180px;
+           border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+     <div id="box">
+        <p>This paragraph is dedicated to box shape</p>
+     </div>
+
+     <div id="cube">
+        <p>This paragraph is dedicated to cube shape</p>
+     </div>
+
+     <div id="rectangle">
+        <p>This paragraph is dedicated to rectangle shape</p>
+     </div>
+</body>
+<script>
+
+     var newText = "This text is heading of box";
+
+     var target = document.getElementById("box");
+
+     target.insertAdjacentText("beforebegin",newText);
+
+     // this operation is for cube
+
+     var newText_cube = "This text is heading of cube";
+
+     var target_cube = document.getElementById("cube");
+
+     target_cube.insertAdjacentText("afterbegin",newText_cube);
+
+     // this operation is for rectangle
+
+     var newText_rectangle = "This text is heading of rectangle";
+
+     var target_rectangle = document.getElementById("rectangle");
+
+     target_rectangle.insertAdjacentText("beforeend",newText_rectangle);
+</script>
+</html>

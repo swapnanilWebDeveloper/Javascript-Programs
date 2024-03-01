@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            color: aqua;
+            background-color: darkviolet;
+        }
+        .second{
+            color: yellow;
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+        .third{
+            background-color: rgb(109, 49, 59);
+            width: 300px;
+            padding-top: 40px;
+            padding-left: 100px;
+        }
+        .fourth{
+             margin-left: 100px;
+             margin-top: 100px;
+             color:rgb(164, 164, 220);
+             font-size: 25px;
+        }
+        .fifth{
+            font-weight: bolder;
+            border: 5px solid green;
+        }
+        .sixth{
+            color: red;
+            background-color: yellow;
+            font-size: 35px;
+            border: 12px solid blue;
+        }
+    </style>
+</head>
+<body>
+       <p id="header" class="first">
+        this is a statement
+       </p>
+</body>
+
+<script>
+    document.getElementById('header').addEventListener("click",add_class_first);
+    document.getElementById('header').addEventListener("dblclick",add_class_second);
+    document.getElementById('header').addEventListener("contextmenu",add_class_third);
+
+    function add_class_first(){
+        document.getElementById('header').classList.add("second","third","fourth","fifth","sixth");
+
+        var arr_class = document.getElementById('header').classList.contains("first");
+        console.log("result :"+arr_class);
+        arr_class = document.getElementById('header').classList.contains("secondary");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("third");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("seventh");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("second");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("sixteenth");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("sixth");
+        console.log("result : "+arr_class);
+        
+    }
+    function add_class_second(){
+        document.getElementById('header').classList.remove("fourth");
+        
+        console.log("I am in the second method");
+        var arr_class = document.getElementById('header').classList.contains("first");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("fourth");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("third");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("seventh");
+        console.log("result : "+arr_class);
+        
+    }
+    function add_class_third(){
+        document.getElementById('header').classList.remove("third","sixth");
+
+        console.log("I am in the third method");
+        var arr_class = document.getElementById('header').classList.contains("first");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("fourth");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("third");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("sixth");
+        console.log("result : "+arr_class);
+
+        arr_class = document.getElementById('header').classList.contains("second");
+        console.log("result : "+arr_class);
+        arr_class = document.getElementById('header').classList.contains("fifth");
+        console.log("result : "+arr_class);
+        
+    }
+  </script>
+</html>

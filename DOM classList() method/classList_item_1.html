@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cls_first{
+            color: aqua;
+            background-color: darkviolet;
+        }
+        .cls_second{
+            color: yellow;
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+        .cls_third{
+            background-color: rgb(109, 49, 59);
+            width: 300px;
+            padding-top: 40px;
+            padding-left: 100px;
+        }
+        .cls_fourth{
+             margin-left: 100px;
+             margin-top: 100px;
+             color:rgb(164, 164, 220);
+             font-size: 25px;
+        }
+        .cls_fifth{
+            font-weight: bolder;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+<body>
+       <p id="header" class="cls_first">
+        this is a statement
+       </p>
+</body>
+
+<script>
+    document.getElementById('header').addEventListener("click",add_class);
+
+    function add_class(){
+        document.getElementById('header').classList.add("cls_second","cls_third","cls_fourth","cls_fifth");
+
+        var arr_class0 = document.getElementById('header').classList.item(0);
+        console.log(arr_class0);
+
+        var arr_class1 = document.getElementById('header').classList.item(1);
+        console.log(arr_class1);
+
+        var arr_class2 = document.getElementById('header').classList.item(2);
+        console.log(arr_class2);
+
+        var arr_class3 = document.getElementById('header').classList.item(3);
+        console.log(arr_class3);
+
+        var arr_class4 = document.getElementById('header').classList.item(4);
+        console.log(arr_class4);
+    }
+  </script>
+</html>
